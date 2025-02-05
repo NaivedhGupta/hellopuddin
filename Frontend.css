@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Yusei+Magic&family=Zilla+Slab+Highlight:wght@400;700&display=swap');
+
+:root{
+    --black:rgba(0, 0, 0, 1);
+    --light-black:rgba(48, 48, 48, 1);
+    --tint:rgba(245, 237, 237, 1);
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline:none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 90%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+html::-webkit-scrollbar-track{
+    background-color: white;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: black;
+}
+header{
+    position: fixed;
+    top: 0;left: 0; right: 0;
+    background: white;
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow );
+}
+
+header .logo-header{
+    color: var(--black);
+    font-size: 40px;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+        
+}
+header .navbar a{
+    font-size: 24px;
+    padding: .5rem 1.5rem;
+    color: var(--black);
+    font-weight: 400;
+}
+
+header .navbar a:hover{
+    font-weight: 500;
+}
+
+header .icons i{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+#menu-bars{
+    display: none;
+    /* visibility: hidden; */
+    z-index: -1;
+}
+
+/* footer  */
+footer{
+    background: var(--black);
+    padding: 50px 7%;
+    padding-bottom: 20px;
+}
+
+footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+    gap: 110px;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+
+footer .box-container .box h1{
+    display: block;
+    padding: .5rem 0 ;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 56px;
+    color: white;  
+}
+
+footer .box-container .box h3{
+    display: block;
+    padding: .5rem 0 ;
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    color: white;  
+}
+footer .box-container .box h5
+{
+    display: block;
+    padding: .5rem 0 ;
+    font-size: 24px;
+    font-weight: 400;
+    color: white;  
+}
+
+footer .box-container .box a{
+    display: block;
+    padding: .5rem 0 ;
+    font-size: 18px;
+    font-weight: 300;
+    color: white; 
+}
+
+footer .box-container .box p{
+    display: block;
+    padding: .5rem 0 ;
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+}
+footer .box-container .box p span{
+    font-weight: 500;
+}
+
+footer .box-container #Quick-link{
+    padding-left: 110px;
+}
+
+footer .box-container #get-in-touch{
+    padding-left: 110px;
+}
+footer .box-container .box .social{
+    display: flex;
+}
+footer .box-container .box .social a{
+    flex: 1;
+    font-size: 32px;
+    /* padding: 20px; */
+}
+footer .box-container .box .social .instagram{
+    padding-left: 0;
+}
+
+footer .credit{
+    text-align: center;
+    border-top: .1rem solid rgb(255, 255, 255);
+    font-size: 16px;
+    color: white;
+    /* padding: 15px; */
+     padding-top: 20px;
+    margin-top: 20px; 
+}
+/* footer .credit span{
+    color: green;
+} */
+
+/* footer  */
+
+
+/* Hero section  */
+.banner{
+    background-image: url(Banners/Banner-images2.jpg);
+    width: 100%;
+    height: 780px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* top: 100px; */
+    position: relative;
+    z-index: -1;
+}
+
+.banner .Discover{
+    font-family: "Yusei Magic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 48px;
+    
+    position: absolute;
+    text-align: center;
+
+    left: 300px;
+    padding-top: 20%;
+}
+.banner h1{
+    font-family: "Zilla Slab Highlight", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+    text-align: center;
+    padding-top: 25%;
+    position: absolute;
+    left: 100px;
+}
+/* Hero section  */
+
+
+/* What we are */
+.what-we-are{
+    background-color: white;
+    text-align: center;
+    margin: 5%;
+    
+}
+.what-we-are .Welcome{
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    padding: 10px;
+}
+.what-we-are h2{
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 36px;
+    padding: 5px;
+}
+.what-we-are .intro{
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    color: #303030;
+    padding: 5px;
+}
+
+/* What we are */
+
+
+/* nutrients */
+.contains-section{
+    margin: 10px 200px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-top: 2px solid #303030;
+    border-bottom: 2px solid #303030;
+
+}
+
+/* .contains-section .nutrient{
+    
+    margin: 10px 200px;
+    border-top: 2px solid #303030; */
+    /* z-index: -1; */
+/* } */
+.contains-section .nutrient h2
+{
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+    padding: 3%;
+}
+
+.contains-section .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    justify-content: space-between;
+    align-items: center;
+}   
+.contains-section .box-container .box{
+    overflow: hidden;
+    text-align: center;
+    font-size: 24px;
+}
+/* .contains-section .box-container .box1 img{
+    width: 100%;
+} */
+.contains-section .box-container .box p{
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.contains-section .box-container .box3 p{
+    padding-top: 10px;
+}
+.contains-section .box-container .box3 img{
+    padding-top: 20px;
+}
+
+
+/* nutrients */
+
+/* product-section  */
+.Products{
+    margin: 0px 200px;
+    border-bottom: 2px solid #303030;
+    padding-bottom: 30px;
+    /* position: relative; */
+}
+
+.Products h2{
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.Products h4{
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.Products .product-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 80px;
+    padding: 10px;
+}
+
+.Products .Explore-btn{
+    text-align: center;
+    margin: 80px 0px 40px;
+}
+
+.Products .Explore-btn #btn{
+    
+    padding: 15px 50px;
+    font-size: 24px;
+    font-weight: 500;
+    border: 2px solid black;
+    background-color: white;
+    cursor: pointer;
+    
+}
+/* product-section  */
+
+/* information-1  */
+.info-1{
+    display: flex;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    margin: 0px 200px;
+    padding-top: 80px;
+}
+.info-1 .info1-img{
+    flex: 1 1 200px;
+}
+.info-1 .info1-img img{
+    width: auto;
+    height: 392px;
+}
+.info-1 .info1-img-content{
+    flex: 1 1 200px;
+    padding-left: 54px;
+    
+}
+.info-1 .info1-img-content h4{
+    padding-top: 10px;
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 36px;
+    
+}
+.info-1 .info1-img-content p{
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 30px;
+}
+/* information-1  */
+
+
+/* information-2 */
+.info-2{
+    display: flex;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    margin: 0px 200px;
+    padding-top: 100px;
+    padding-bottom:50px ;
+    
+}
+.info-2 .info2-img-content{
+    flex: 1 1 200px;
+    padding-right: 54px;
+    
+}
+.info-2 .info2-img{
+    flex: 1 1 200px;
+}
+.info-2 .info2-img img{
+    width: auto;
+    height: 392px;
+}
+.info-2 .info2-img-content h4{
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 36px;
+    
+}
+.info-2 .info2-img-content p{
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 25px;
+    line-height: normal;
+}
+.info-2 .info2-img-content p span{
+    font-weight: 500;
+}
+/* information-2 */
+
+
+/* About-Us  */
+.about-us-section{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 200px;
+    border-top: 2px solid #303030;
+    padding-top: 100px;
+    border-bottom: 2px solid #303030;
+    padding-bottom:60px ;
+}
+.about-us-section .about-us-img{
+    flex: 1 1 200px;
+}
+.about-us-section .about-us-img img{
+    width: 580px;
+    height: auto;
+}
+.about-us-section .about-us-content{
+    flex: 1 1 200px;
+    padding-left: 54px;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+}
+.about-us-section .about-us-content h4{
+    padding-top: 10px;
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+}
+.about-us-section .about-us-content p{
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 30px;
+    line-height: 130%;
+}
+.about-us-section .about-us-content .about-us-btn{
+    text-align: left;
+    margin: 50px 0px 40px;
+}
+.about-us-section .about-us-content .about-us-btn .btn{
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 500;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+/* About-Us  */
+
+/* gift  */
+.gift-container{
+    padding-top: 100px;
+}
+.gift-container .gift{
+    background-image: url(Gift-Image/Gift.jpg);
+    height: 448px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+.gift-container .gift p{
+    padding-top: 80px;
+    font-size: 24px;
+    text-align: center;
+}
+.gift-container .gift .btn{
+    text-align: center;
+    margin: 50px 0px 40px;
+}
+.gift-container .gift .btn button{
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: 500;
+    border: 2px solid black;
+    cursor: pointer;
+}
+/* gift  */
+
+.newsletter-section {
+    padding: 100px 0;
+    text-align: center;
+    background-color: #F5EDED;
+}
+.newsletter-section h4{
+    font-size: 24px;
+    font-weight: 500;
+}
+.newsletter-section p{
+    padding-top: 10px ;
+    font-size: 16px;
+    font-weight: 400;
+}
+/* .newsletter-section .form .input{
+    display: flex;
+    justify-content: center;
+    height: 36px; 
+    width: 400px;
+    border: 2px solid black;
+    text-align: center;
+} */
+.newsletter-section form{
+    padding: 10px 0;
+}
+.newsletter-section form input{
+    border: 2px solid black;
+    height: 36px; 
+    width: 400px;
+    padding: 10px 20px ;
+    
+}
+.input::-webkit-input-placeholder{
+    font-size: 16px;
+    color: #818181;
+    text-align: center;
+}
+.newsletter-section .button{
+    padding-top: 10px;
+}
+.newsletter-section .button .btn{
+    padding: 10px 30px;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    font-weight: 500;
+    border: 2px solid black;
+    cursor: pointer;
+}
